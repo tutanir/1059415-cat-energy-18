@@ -32,7 +32,7 @@ a {
 }
 
 .visually-hidden {
-    position: absolute;
+  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -43,6 +43,14 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 45px 21px 0;
+  position: relative;
+}
+
 
 
 
