@@ -1,2 +1,30 @@
+.page-header__logo-image {
+  width: 194px;
+   height: 40px;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (width: 740px) {
+  .main-nav__list {
+  display: flex;
+  flex-direction: row;
+  }
+}
+
+.header__btn-toogl {
+  background-image: url(C:\Users\Asus\.ssh\1059415-cat-energy-18\source\img\icon-plus-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: inherit;
+  border: none;
+  width: 24px;
+  height: 24px;
+  align-self: center;
+}
+
 
 
