@@ -4,14 +4,18 @@
   margin: 0;
 }
 
+.site-list__item {
+  min-height: 70px;
+}
+
 .site__list__link {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  text-align: center;
   color: #111111;
-  }
+  vertical-align: middle;
+}
 
 @media (min-width: 740px) {
   .site__list__link {
@@ -26,6 +30,11 @@
 
 @media (min-width: 1400px) {
   .site__list__link {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
     color: blue;
   }
 }
