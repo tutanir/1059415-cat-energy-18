@@ -9,7 +9,6 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  background: red;
 }
 
 @media (min-width: 740px) {
@@ -30,19 +29,19 @@
 }
 
 @media (min-width: 1400px) {
-   .page-header__logo-image {
-     width: 200px;
-     height: 60px;
+  .page-header__logo-image {
+    width: 200px;
+    height: 60px;
   }
 
-   .main-nav__list {
-     display: flex;
-     flex-direction: row;
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
   }
 
-   .page-header {
-     display: flex;
-     flex-direction: row;
+  .page-header {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -56,6 +55,3 @@
   height: 24px;
   align-self: center;
 }
-
-
-
