@@ -4,11 +4,9 @@
   margin: 0;
 }
 
-.site-list__item {
-  min-height: 70px;
-}
-
 .site__list__link {
+  display: block;
+  padding: 25px 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
@@ -23,7 +21,7 @@
     line-height: 24px;
     text-transform: uppercase;
     text-align: center;
-    color: red;
+    color: #222222;
   }
 }
 

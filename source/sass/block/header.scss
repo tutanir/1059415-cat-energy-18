@@ -1,12 +1,13 @@
 .page-header {
-  background-color: #ffff;
-  background-color: green;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 13px 0 21px 0;
 }
 
 .page-header__logo-image {
-  width: 190px;
+  width: 185px;
   height: 40px;
-  margin-bottom: 40px;
 }
 
 .main-nav__list {
@@ -14,13 +15,45 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  background: red;
+}
+
+.site-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.site__list__link {
+  display: block;
+  padding: 25px 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.page-header__btn-toogle {
+  display: block;
+  /*background-image: url();*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;/*временно*/
+  border: none;
+  width: 24px;
+  height: 24px;
+  margin-left: 47px;
 }
 
 @media (min-width: 740px) {
+  .page-header {
+    flex-direction: row;
+
+  }
+
   .page-header__logo-image {
-    width: 170px;
-    height: 60px;
+    width: 190px;
+    height: 65px;
   }
 
   .main-nav__list {
@@ -28,9 +61,22 @@
     flex-direction: row;
   }
 
-  .page-header {
-    display: flex;
-    flex-direction: row;
+  .site__list__link {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #222222;
+  }
+
+  .site-list__item:nth-child(1),
+  .site-list__item:nth-child(2) {
+    margin-right: 30px;
+  }
+
+  .page-header__btn-toogle {
+    display: none;
   }
 }
 
@@ -48,16 +94,19 @@
   .page-header {
     display: flex;
     flex-direction: row;
+    padding: 90px 0 110px 0;
   }
-}
 
-.page-header__btn-toogle {
-  /*background-image: url(C:\Users\Asus\.ssh\1059415-cat-energy-18\source\img\icon-plus-mobile.svg);*/
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: black;/*временно*/
-  border: none;
-  width: 24px;
-  height: 24px;
-  align-self: center;
+  .site__list__link {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    color: blue;
+  }
+
+  .page-header__btn-toogle {
+    display: none;
+  }
 }
