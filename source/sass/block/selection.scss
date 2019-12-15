@@ -2,9 +2,10 @@
   background-color: #68b738;
 }
 
-
 .selection__button {
   text-transform: uppercase;
+  padding: 15px 55px;
+  margin-left: 20px;
 }
 
 .selection__title {
@@ -31,4 +32,38 @@
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+}
+
+@media (min-width: 740px) {
+  .selection {
+    width: 450px;
+    background-color: #ffffff;
+  }
+
+  .selection__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: none;
+    text-align: left;
+    color: #111111;
+  }
+
+  .selection__food {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #111111;
+  }
+
+  .selection__button {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    color: #ffffff;
+  }
 }

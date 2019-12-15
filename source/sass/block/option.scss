@@ -1,7 +1,7 @@
 .option__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
-  font-weight: 500;
+  line-height: 37px;
   text-transform: uppercase;
   text-align: center;
   color: #111111;
@@ -10,25 +10,71 @@
 .option__description {
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 18px;
-  letter-spacing: normal;
   text-transform: none;
   text-align: center;
   color: #282828;
 }
 
 .option__link {
+  display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 16px;
-  letter-spacing: normal;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   color: #282828;
+  padding: 25px 0;
+  border-top: 1px solid;
+}
+
+.option__list {
+  width: 280px;
+  margin: 0 auto;
+  padding: 13px 0 21px 0;
+}
+
+.list__item {
+  background-color: #f2f2f2;
+  margin-top: 25px;
+  padding: 0 20px;
+}
+
+@media (min-width: 740px) {
+  .option__title {
+    font-size: 37px;
+  }
+
+  .option__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .option__link {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-top: none;
+  }
+
+  .list__item {
+    padding: 80px 55px;
+  }
+
+  .option__list {
+    width: 710px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .list__item {
+    padding: 40px 55px;
+    width: 570px;
+  }
+
+  .option__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
