@@ -14,10 +14,21 @@
 
 .social__list {
   display: flex;
+  justify-content: space-between;
+}
+
+.social__item {
+  width: 25px;
+  height: 15px;
 }
 
 @media (min-width: 740px) {
   .page__footer {
     display: flex;
+  }
+
+  .social__item {
+    width: 30px;
+    height: 30px;
   }
 }
