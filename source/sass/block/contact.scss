@@ -1,11 +1,7 @@
 .contact__cooperation {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 20px;
-  letter-spacing: normal;
   text-transform: uppercase;
   text-align: left;
   color: #282828;
@@ -14,11 +10,7 @@
 .contact__direction {
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 20px;
-  letter-spacing: normal;
   text-transform: none;
   text-align: center;
   color: #282828;
@@ -26,4 +18,42 @@
 
 .contact__map__imag {
   width: 100%;
+}
+
+.contact__address {
+  display: flex;
+  padding: 20px;
+}
+
+@media (min-width: 740px) {
+  .contact__cooperation {
+    font-size: 20px;
+    line-height: 25px;
+    width: 200px;
+  }
+
+  .contact__direction {
+    font-size: 16px;
+    line-height: 20px;
+    width: 200px;
+  }
+
+  .contact__address {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1400px) {
+  .contact__address {
+    width: 570px;
+    height: 200px;
+  }
+
+  .contact__cooperation {
+    width: 160px;
+  }
+
+  .contact__direction {
+    width: 160px;
+  }
 }

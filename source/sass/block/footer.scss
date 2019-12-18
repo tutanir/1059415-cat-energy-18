@@ -1,4 +1,46 @@
 .page__footer__logo {
   width: 130px;
+  height: 30px;
+}
+
+.page-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright__link {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: none;
+  text-align: center;
+  color: #282828;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social__link {
+  display: flex;
+  width: 25px;
   height: 25px;
+}
+
+@media (min-width: 740px) {
+  .page__footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social__link {
+    display: flex;
+    width: 30px;
+    height: 30px;
+  }
+
+  .social__list {
+    width: 140px;
+  }
 }

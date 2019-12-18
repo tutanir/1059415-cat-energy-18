@@ -1,41 +1,26 @@
 .catalog__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 60px;
-  letter-spacing: normal;
   text-transform: none;
   text-align: center;
   color: #282828;
 }
 
-.catalog__list {
-  list-style: none;
-}
-
-.catalog__card {
+.catalog__p {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 20px;
-  letter-spacing: normal;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   color: #282828;
+  width: 75px;
 }
 
 .list__info {
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 16px;
-  letter-spacing: normal;
   text-transform: none;
   text-align: center;
   color: #282828;
@@ -44,12 +29,66 @@
 .catalog__button {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 20px;
-  letter-spacing: normal;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  background-color: #68b738;
+  padding: 15px 110px;
+}
+
+.catalog__item {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.catalog__card {
+  display: flex;
+  flex-direction: column;
+  min-width: 140px;
+}
+
+.catalog__table {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 740px) {
+  .catalog__title {
+    font-size: 60px;
+  }
+
+  .catalog__p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .list__info {
+    font-size: 16px;
+  }
+
+  .catalog__item {
+    flex-direction: column;
+    width: 325px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__card {
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .catalog__item {
+    width: 245px;
+  }
 }
