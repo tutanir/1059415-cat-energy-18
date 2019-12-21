@@ -27,7 +27,7 @@
   margin: 0;
 }
 
-.site__list__link {
+.site-list__link {
   display: block;
   padding: 25px 0;
   font-family: "Oswald", "Arial", sans-serif;
@@ -38,7 +38,7 @@
   color: #111111;
 }
 
-.site__list__link :last-child {
+.site-list__link:last-child {
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -73,7 +73,7 @@
     flex-direction: row;
   }
 
-  .site__list__link {
+  .site-list__link {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -117,7 +117,7 @@
     margin-left: 300px;
   }
 
-  .site__list__link {
+  .site-list__link {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 25px;
