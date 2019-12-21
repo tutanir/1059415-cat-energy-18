@@ -34,18 +34,22 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  border-top: 1px solid #e6e6e6;
   color: #111111;
+}
+
+.site__list__link :last-child {
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__btn-toogle {
   display: block;
-  /*background-image: url();*/
   background-repeat: no-repeat;
   background-position: center;
   background-color: black;/*временно*/
   border: none;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   margin-left: 47px;
 }
 
