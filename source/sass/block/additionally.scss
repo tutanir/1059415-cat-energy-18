@@ -35,6 +35,7 @@
 }
 
 .additionally__button {
+  display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -50,11 +51,6 @@
   flex-direction: column;
 }
 
-.additionally__item {
-  padding: 0;
-  margin-top: 20px;
-}
-
 .additionally__card {
   display: flex;
   flex-direction: row;
@@ -68,8 +64,8 @@
 
 @media (min-width: 740px) {
   .additionally__goods {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .additionally__packing {
@@ -90,11 +86,45 @@
   .additionally__item {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .additionally__button {
+    width: 100%;
   }
 
   .additionally__card {
     margin: 0;
     padding-top: 20px;
     width: 240px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .additionally__div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additionally__item{
+    flex-wrap: nowrap;
+  }
+
+  .additionally__button {
+    width: 250px;
+    padding: 15px 90px;
+  }
+
+  .additionally__product {
+    min-width: 900px;
+  }
+
+  .additionally__card {
+    width: 290px;
+  }
+
+  .additionally__image {
+    width: 250px;
   }
 }
