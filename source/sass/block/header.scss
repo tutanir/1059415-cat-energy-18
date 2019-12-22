@@ -12,7 +12,7 @@
   height: 30px;
 }
 
-.close-toogle:after {
+.close-toogle::after {
   content: "";
   position: absolute;
   height: 4px;
@@ -23,7 +23,7 @@
   transform: rotate(-45deg);
 }
 
-.close-toogle:before {
+.close-toogle::before {
   content: "";
   position: absolute;
   left: -10px;

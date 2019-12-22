@@ -75,7 +75,8 @@
   left: 140px;
 }
 
-.close:after, .close:before {
+.close::after,
+.close::before {
   content: "";
   position: absolute;
   height: 4px;
@@ -83,11 +84,11 @@
   background-color: #d3d3d3;
 }
 
-.close:before {
+.close::before {
   transform: rotate(90deg);
 }
 
-.close:after {
+.close::after {
   transform: rotate(0deg);
 }
 
@@ -135,7 +136,8 @@
     background-color: #ffffff;
   }
 
-  .close:after, .close:before {
+  .close::after,
+  .close::before {
     width: 65px;
   }
 
@@ -150,7 +152,7 @@
   }
 
   .catalog__button {
-    padding: 15px 55px ;
+    padding: 15px 55px;
   }
 
   .others__button {
