@@ -1,11 +1,7 @@
 .additionally__goods {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 24px;
-  letter-spacing: normal;
   text-transform: none;
   text-align: left;
   color: #282828;
@@ -14,11 +10,7 @@
 .additionally__ingredient {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 16px;
-  letter-spacing: normal;
   text-transform: uppercase;
   text-align: left;
   color: #282828;
@@ -27,11 +19,7 @@
 .additionally__packing {
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 14px;
-  letter-spacing: normal;
   text-transform: none;
   text-align: left;
   color: #282828;
@@ -40,25 +28,103 @@
 .additionally__weight {
   font-family: "Arial", sans-serif;
   font-size: 14px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 14px;
-  letter-spacing: normal;
   text-transform: none;
   text-align: left;
   color: #282828;
 }
 
 .additionally__button {
+  display: block;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 20px;
-  letter-spacing: normal;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  background-color: #68b738;
+  padding: 15px 110px;
+}
+
+.additionally__product {
+  display: flex;
+  flex-direction: column;
+}
+
+.additionally__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.additionally__gift {
+  margin-top: 60px;
+}
+
+@media (min-width: 740px) {
+  .additionally__goods {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .additionally__packing {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additionally__weight {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additionally__ingredient {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additionally__item {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .additionally__button {
+    width: 100%;
+  }
+
+  .additionally__card {
+    margin: 0;
+    padding-top: 20px;
+    width: 240px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .additionally__div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additionally__item {
+    flex-wrap: nowrap;
+  }
+
+  .additionally__button {
+    width: 250px;
+    padding: 15px 90px;
+  }
+
+  .additionally__product {
+    min-width: 900px;
+  }
+
+  .additionally__card {
+    width: 290px;
+  }
+
+  .additionally__image {
+    width: 250px;
+  }
 }

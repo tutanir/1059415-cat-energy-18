@@ -3,10 +3,12 @@
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 13px 0 21px 0;
+  width: 280px;
 }
 
 .main-nav {
   width: 100%;
+  display: none;
 }
 
 .page-header__logo-image {
@@ -27,26 +29,43 @@
   margin: 0;
 }
 
-.site__list__link {
+.site-list__link {
   display: block;
   padding: 25px 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  border-top: 1px solid #e6e6e6;
   color: #111111;
+}
+
+.site-list__item:last-child {
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__btn-toogle {
   display: block;
-  /*background-image: url();*/
+  background-image: url(../img/icon-mobile-menu.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: black;/*временно*/
   border: none;
-  width: 24px;
-  height: 24px;
-  margin-left: 47px;
+  width: 20px;
+  height: 20px;
+  margin-left: 75px;
+  margin-top: 10px;
+}
+
+.page-header__checkbox {
+  display: none;
+}
+
+.page-header__checkbox:checked ~ .page-header__btn-toogle {
+  background-image: url(../img/icon-close.svg);
+}
+
+.page-header__checkbox:checked ~ .main-nav {
+  display: block;
 }
 
 @media (min-width: 740px) {
@@ -69,13 +88,22 @@
     flex-direction: row;
   }
 
-  .site__list__link {
+  .site-list__link {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
     text-align: center;
+    border: none;
     color: #222222;
+  }
+
+  .site-list__item--line {
+    border-bottom: 2px solid #68b738;
+  }
+
+  .site-list__link:last-child {
+    border: none;
   }
 
   .site-list__item:nth-child(1),
@@ -113,7 +141,7 @@
     margin-left: 300px;
   }
 
-  .site__list__link {
+  .site-list__link {
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 25px;

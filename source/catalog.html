@@ -11,17 +11,19 @@
         <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="логотип компании">
       </a>
       <input type="checkbox" id="menu-toggle" class="page-header__checkbox">
-      <label for="menu-toggle" class="page-header__btn-toogle"></label>
+      <label for="menu-toggle" class="page-header__btn-toogle">
+        <span class="close-toogle"></span>
+      </label>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a class="site__list__link" href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item site-list__item--line">
+            <a class="site-list__link" href="#">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site__list__link" href="#">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site__list__link" href="form.html">Подбор программы</a>
+            <a class="site-list__link" href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -164,18 +166,20 @@
               </div>
               <a class="catalog__button button" href="#">Заказать</a>
             </li>
+            <li class="catalog__item catalog__item--last">
+              <div class="close"></div>
+              <p class="catalog__p catalog__p--last">Показать еще 100500 товаров</p>
+              <p class="list__info list__info--last">На самом деле вкусов гораздо больше!</p>
+              <button class="others__button" type="button">Показать все</button>
+            </li>
           </ul>
         </section>
       </div>
       <div class="wrapper">
-        <section class="others">
-          <h2 class="others__title">Показать еще 100500 товаров</h2>
-          <p class="others__info">На самом деле вкусов гораздо больше!</p>
-          <button class="others__button" type="button">Показать все</button>
-        </section>
         <section class="additionally">
           <p class="additionally__goods">Дополнительные товары</p>
-          <ul class="additionally__product list">
+          <div class="additionally__div">
+            <ul class="additionally__product list">
             <li class="additionally__item">
               <p class="additionally__ingredient" >сахарозаменитель</p>
               <div class="additionally__card">
@@ -190,7 +194,7 @@
                 <div class="additionally__packing">5 литров</div>
                 <div class="additionally__weight">50 р.</div>
               </div>
-              <a class="additionally__button button" href="#">Заказать</a>
+              <a class="additionally__button" href="#">Заказать</a>
             </li>
             <li class="additionally__item">
               <p class="additionally__ingredient" >молоко</p>
@@ -198,7 +202,7 @@
                 <div class="additionally__packing">1 литр</div>
                 <div class="additionally__weight">100 р.</div>
               </div>
-              <a class="additionally__button button" href="#">Заказать</a>
+              <a class="additionally__button" href="#">Заказать</a>
             </li>
             <li class="additionally__item">
               <p class="additionally__ingredient" >витамины</p>
@@ -206,12 +210,13 @@
                 <div class="additionally__packing">1 упаковка (30 г)</div>
                 <div class="additionally__weight">300 р.</div>
               </div>
-              <a class="additionally__button button" href="">Заказать</a>
+              <a class="additionally__button" href="">Заказать</a>
             </li>
           </ul>
           <div class="additionally__gift">
             <img class="additionally__image" src="img/gift-photo-mobile@1x.jpg" alt="изображение с предложением подарка">
           </div>
+        </div>
         </section>
       </div>
       <section class="contact">
@@ -222,23 +227,23 @@
           </div>
         </div>
         <div class="contact__map">
-          <img src="img/bg-map-mobile@1x.png" alt="Карта">
+          <img class="contact__map-imag" src="img/bg-map-mobile@1x.png" alt="Карта">
         </div>
       </section>
     </main>
     <div class="wrapper">
       <footer class="page-footer">
-        <img class="page__footer__logo" src="img/logo-footer.svg" >
+        <img class="page-footer__logo" src="img/logo-footer.svg" >
         <div class="page-footer__social social">
           <ul class="social__list list">
             <li class="social__item">
               <a class="social__link social__link--vkontacte" href="#"><img src="img/icon-vk.svg"></a>
             </li>
             <li class="social__item">
-              <a class="social__item social__item--instagram" href="#"><img src="img/icon-insta.svg"></a>
+              <a class="social__link social__item--instagram" href="#"><img src="img/icon-insta.svg"></a>
             </li>
             <li class="social__item">
-              <a class="social__item social__item--facebook" href="#"><img src="img/icon-fb.svg"></a>
+              <a class="social__link social__item--facebook" href="#"><img src="img/icon-fb.svg"></a>
             </li>
           </ul>
         </div>
