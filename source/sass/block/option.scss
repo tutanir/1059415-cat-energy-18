@@ -12,7 +12,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: none;
-  text-align: center;
+  text-align: left;
   color: #282828;
 }
 
@@ -25,7 +25,7 @@
   text-align: left;
   color: #282828;
   padding: 25px 0;
-  border-top: 1px solid;
+  border-top: 1px solid #68b738;
 }
 
 .option__list {
@@ -38,6 +38,12 @@
   background-color: #f2f2f2;
   margin-top: 25px;
   padding: 0 20px;
+}
+
+.list__item-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
 }
 
 @media (min-width: 740px) {
