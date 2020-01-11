@@ -63,6 +63,19 @@
   display: block;
 }
 
+.page-header__logo-img--mobil {
+  width: 190px;
+  height: 50px;
+}
+
+.page-header__logo-img--tablet {
+  display: none;
+}
+
+.page-header__logo-img--desktop {
+  display: none;
+}
+
 @media (min-width: 740px) {
   .page-header {
     flex-direction: row;
@@ -70,8 +83,8 @@
     width: 780px;
   }
 
-  .page-header__logo-image {
-    width: 175px;
+  .page-header__logo {
+    width: 190px;
     height: 70px;
   }
 
@@ -115,6 +128,15 @@
   .page-header__checkbox {
     display: none;
   }
+
+  .page-header__logo-img--tablet {
+    display: block;
+    height: 60px;
+  }
+
+  .page-header__logo-img--mobil {
+    display: none;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -149,5 +171,12 @@
 
   .page-header__btn-toogle {
     display: none;
+  }
+
+  .page-header__logo-img--desktop {
+    display: block;
+
+  .page-header__logo-img--tablet {
+  display: none;
   }
 }
