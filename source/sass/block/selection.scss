@@ -66,4 +66,29 @@
     padding: 20px 30px;
     color: #ffffff;
   }
+
+  .selection-img {
+    display: none;
+  }
+
+  .selection-image {
+    width: 700px;
+    height: 550px;
+  }
 }
+
+@media (min-width: 1400px) {
+  .page-main__selection {
+    display: flex;
+  }
+  .selection-img {
+    width: 720px;
+    height: 690px;
+  }
+
+  .selection-image {
+    width: 430px;
+    height: 480px;
+  }
+}
+
