@@ -1,12 +1,12 @@
 .selection {
-  background-color: #63a73a;
+  position: relative;
 }
-
 .selection__button {
   text-transform: uppercase;
-  padding: 15px 55px;
-  margin-left: 20px;
+  padding: 10px 74px;
+  margin-left: 19px;
   color: #ffffff;
+  background-color: #68b738;
 }
 
 .selection__title {
@@ -16,7 +16,7 @@
   line-height: 1.13;
   text-align: center;
   margin: 0;
-  padding-top: 15px;
+  padding-top: 22px;
   color: #ffffff;
 }
 
@@ -31,11 +31,31 @@
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  margin-top: 20px;
 }
 
 .page-main__selection-img {
+  position: absolute;
   background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  z-index: -2;
   height: 305px;
+  width: 320px;
+  top: 0;
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+}
+
+.selection-image {
+  margin-left: 19px;
+  margin-top: 13px;
+  margin-bottom: 14px;
+}
+
+.page-main {
+  margin-top: -14px;
 }
 
 @media (min-width: 740px) {
@@ -50,9 +70,10 @@
     text-transform: none;
     text-align: center;
     color: #111111;
-    padding-top: 29px;
-    padding-left: 110px;
+    padding-top: 41px;
+    padding-left: 88px;
     text-align: left;
+    width: 505px;
   }
 
   .selection__food {
@@ -62,6 +83,8 @@
     text-transform: uppercase;
     text-align: center;
     color: #111111;
+    margin-right: 252px;
+    margin-top: 42px;
   }
 
   .selection__button {
@@ -69,7 +92,11 @@
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
-    padding: 20px 30px;
+    position: absolute;
+    left: 88px;
+    top: 269px;
+    padding: 16px 28px;
+    margin: 0;
     color: #ffffff;
     background-color: #68b738;
   }
@@ -79,8 +106,10 @@
   }
 
   .selection-image {
-    width: 700px;
-    height: 550px;
+    position: relative;
+    width: 710px;
+    height: 610px;
+    margin: 0;
   }
 }
 
