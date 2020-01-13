@@ -141,9 +141,9 @@
   }
 
   .page-header {
+    position: absolute;
     display: flex;
     flex-direction: row;
-    padding: 90px 0 110px 0;
     width: 1220px;
   }
 
@@ -166,10 +166,11 @@
 
   .page-header__logo-img--desktop {
     display: block;
-    width: 210px;
+    width: 200px;
+    margin-top: 5px;
   }
 
   .page-header__logo-img--tablet {
-  display: none;
+    display: none;
   }
 }

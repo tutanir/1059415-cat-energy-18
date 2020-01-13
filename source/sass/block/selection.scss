@@ -32,9 +32,13 @@
   color: #ffffff;
 }
 
+.page-main__selection-img {
+  background-image: url("../img/index-background-mobile@1x");
+  height: 305px;
+}
+
 @media (min-width: 740px) {
   .selection {
-    width: 450px;
     background-color: #ffffff;
   }
 
@@ -80,15 +84,23 @@
 @media (min-width: 1400px) {
   .page-main__selection {
     display: flex;
-  }
-  .selection-img {
-    width: 720px;
-    height: 690px;
+    width: 100%;
   }
 
   .selection-image {
-    width: 430px;
+    width: 500px;
     height: 480px;
   }
-}
 
+  .page-main__selection-img {
+    background-image: url("../img/index-background-desktop@1x");
+    height: 700px;
+    width: 720px;
+  }
+
+  .selection__title {
+    width: 500px;
+    padding-left: 190px;
+    padding-top: 222px;
+  }
+}
