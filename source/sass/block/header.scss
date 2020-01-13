@@ -107,7 +107,7 @@
     border-bottom: 2px solid #68b738;
   }
 
-  .site-list__link:last-child {
+  .site-list__item:last-child {
     border: none;
   }
 
@@ -138,6 +138,7 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
+    padding-left: 230px;
   }
 
   .page-header {
@@ -157,7 +158,11 @@
     line-height: 25px;
     text-transform: uppercase;
     text-align: center;
-    color: blue;
+    color: #ffffff;
+  }
+
+  .site-list__item--active {
+    border-bottom: 1px solid #ffffff;
   }
 
   .page-header__btn-toogle {
