@@ -88,6 +88,10 @@
   fill: #111111;
 }
 
+.page-header--catalog {
+  padding-bottom: 7px;
+}
+
 @media (min-width: 740px) {
   .page-header {
     flex-direction: row;

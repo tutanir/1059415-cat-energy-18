@@ -1,11 +1,13 @@
 .catalog__title {
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 36px;
-  line-height: 60px;
+  font-size: 34px;
+  line-height: 34px;
   text-transform: none;
   text-align: center;
   color: #282828;
-  margin-top: 0;
+  border-top: 1px solid #eeeeee;
+  padding: 34px 0;
+  margin: 0;
 }
 
 .catalog__p {
@@ -16,6 +18,7 @@
   text-align: left;
   color: #282828;
   width: 75px;
+  margin: 0;
 }
 
 .list__info {
@@ -23,8 +26,9 @@
   font-size: 12px;
   line-height: 16px;
   text-transform: none;
-  text-align: center;
+  text-align: left;
   color: #282828;
+  margin: 0;
 }
 
 .catalog__button {
@@ -35,15 +39,18 @@
   text-align: center;
   color: #ffffff;
   background-color: #68b738;
-  padding: 15px 110px;
+  padding: 10px 110px;
+  margin-left: 19px;
+  margin-bottom: -4px;
 }
 
 .catalog__item {
-  padding: 0;
   margin: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  border: 1px solid #eeeeee;
+  padding: 23px 0;
 }
 
 .catalog__card {
@@ -55,6 +62,7 @@
 .catalog__table {
   display: flex;
   justify-content: space-between;
+  margin-top: 11px;
 }
 
 .others__button {
@@ -96,9 +104,27 @@
   padding: 25px 0 25px 0;
 }
 
+.catalog__item-flex {
+  display: flex;
+  margin-left: 2px;
+}
+
+.catalog__item-image {
+  margin-top: -23px;
+  margin-left: 18px;
+}
+
+.list__info--date {
+  text-align: right;
+}
+
 @media (min-width: 740px) {
   .catalog__title {
-    font-size: 60px;
+    font-size: 56px;
+    border: none;
+    text-align: left;
+    padding: 0;
+    margin-top: 53px;
   }
 
   .catalog__p {
@@ -112,11 +138,13 @@
   }
 
   .catalog__item {
-    flex-direction: column;
+    position: relative;
+    display: block;
     width: 325px;
-    margin-top: 60px;
-    padding: 60px 40px 40px 40px;
     background-color: #f2f2f2;
+    height: 430px;
+    padding: 0;
+    margin-top: 160px;
   }
 
   .catalog__list {
@@ -127,7 +155,7 @@
   }
 
   .catalog__card {
-    width: 170px;
+    width: 260px;
   }
 
   .catalog__item--last {
@@ -143,6 +171,25 @@
 
   .close {
     left: 90px;
+  }
+
+  .catalog__item-image {
+    position: absolute;
+    width: 100%;
+    height: 172px;
+    margin: 0;
+    top: -50px;
+    left: -1px;
+  }
+
+  .catalog__item-image--tablet {
+    height: 210px;
+    top: -86px;
+    left: -2px;
+  }
+
+  .catalog__button {
+    margin: 21px;
   }
 }
 
