@@ -99,7 +99,7 @@
     width: 780px;
   }
 
-  .site-list__item--active {
+  .site-list__link--active {
     border-bottom: 2px solid #68b738;
   }
 
@@ -122,10 +122,6 @@
     text-align: center;
     border: none;
     color: #222222;
-  }
-
-  .site-list__item--line {
-    border-bottom: 2px solid #68b738;
   }
 
   .site-list__item:last-child {
@@ -205,7 +201,7 @@
     color: #ffffff;
   }
 
-  .site-list__item--active {
+  .site-list__link--active {
     border-bottom: 1px solid #ffffff;
   }
 
